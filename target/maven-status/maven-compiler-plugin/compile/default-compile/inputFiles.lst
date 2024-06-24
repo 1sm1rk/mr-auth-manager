@@ -1,0 +1,10 @@
+/home/sm1rk/projekte/moonrat/mr-auth-manager/src/main/java/de/homelabs/moonrat/authmanager/MrAuthManagerApplication.java
+/home/sm1rk/projekte/moonrat/mr-auth-manager/src/main/java/de/homelabs/moonrat/authmanager/config/SecurityConfig.java
+/home/sm1rk/projekte/moonrat/mr-auth-manager/src/main/java/de/homelabs/moonrat/authmanager/controller/AuthManagerController.java
+/home/sm1rk/projekte/moonrat/mr-auth-manager/src/main/java/de/homelabs/moonrat/authmanager/entity/Client.java
+/home/sm1rk/projekte/moonrat/mr-auth-manager/src/main/java/de/homelabs/moonrat/authmanager/entity/ClientAuthenticationRequest.java
+/home/sm1rk/projekte/moonrat/mr-auth-manager/src/main/java/de/homelabs/moonrat/authmanager/entity/ConfigurationFromDB.java
+/home/sm1rk/projekte/moonrat/mr-auth-manager/src/main/java/de/homelabs/moonrat/authmanager/filter/MrAuthenticationFilter.java
+/home/sm1rk/projekte/moonrat/mr-auth-manager/src/main/java/de/homelabs/moonrat/authmanager/service/ClientRepository.java
+/home/sm1rk/projekte/moonrat/mr-auth-manager/src/main/java/de/homelabs/moonrat/authmanager/service/ConfigurationRepository.java
+/home/sm1rk/projekte/moonrat/mr-auth-manager/src/main/java/de/homelabs/moonrat/authmanager/service/MrAuthManagerClientKeyCacheManager.java
