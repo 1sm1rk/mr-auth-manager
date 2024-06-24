@@ -126,8 +126,9 @@ public class MrAuthenticationFilter extends OncePerRequestFilter {
 	private void setSecurityContex(ClientAuthenticationRequest clientAuthRequest, HttpServletRequest request) {
 		//set security context for spring security chain
 		//TODO: set client authorities (define which data, what means setDetails)
+		byte[] clientKey = clientCacheManager.getClientKeyByClientId(clientAuthRequest.clientId());
 		UsernamePasswordAuthenticationToken authToken = 
-				new UsernamePasswordAuthenticationToken(clientAuthRequest.clientId(), null, null);
+				new UsernamePasswordAuthenticationToken(clientAuthRequest.clientId(), clientKey, null);
 		
 		authToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
 		SecurityContextHolder.getContext().setAuthentication(authToken);
