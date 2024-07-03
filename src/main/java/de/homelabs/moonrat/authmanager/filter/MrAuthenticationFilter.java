@@ -128,7 +128,7 @@ public class MrAuthenticationFilter extends OncePerRequestFilter {
 		//TODO: set client authorities (define which data, what means setDetails)
 		byte[] clientKey = clientCacheManager.getClientKeyByClientId(clientAuthRequest.clientId());
 		UsernamePasswordAuthenticationToken authToken = 
-				new UsernamePasswordAuthenticationToken(clientAuthRequest.clientId(), clientKey, null);
+				new UsernamePasswordAuthenticationToken(clientAuthRequest.clientId(), clientAuthRequest.clientToken(), null);
 		
 		authToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
 		SecurityContextHolder.getContext().setAuthentication(authToken);
